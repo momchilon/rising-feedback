@@ -1,0 +1,25 @@
+name: Website correction
+description: Report an incorrect description, number, category or announcement on Rising.
+title: "Correction: "
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Rising page
+      description: Paste the rising.dev address.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What needs correcting?
+      description: Explain what is shown and what should be changed. Reports are public; omit private information.
+    validations:
+      required: true
+  - type: input
+    id: evidence
+    attributes:
+      label: Public source
+      description: Link to the repository, official announcement or other evidence.
+    validations:
+      required: true
